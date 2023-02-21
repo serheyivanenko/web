@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@500;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  font-family: "Work Sans", sans-serif;
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 20px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  min-height: 100%;
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  padding: 56px 0px;
+}
+.header__container {
+  display: flex;
+}
+.header__logo {
+  padding-right: 1158px;
+}
+.header__link {
+  color: #114455;
+  padding-right: 118px;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 36px;
+}
+.container {
+  max-width: 1750px;
+  margin: 0 auto;
+  padding: 0px 15px;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.button {
+  gap: 16px;
+  color: #114455;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 36px;
+  padding: 10px 24px 10px 12px;
+  border: 1px solid #114455;
+  border-radius: 2px;
+  display: flex;
+}
+
+main {
+  flex: 1 1 auto;
+}
+
+.build {
+  padding: 270px 0px 570px 0px;
+  background-image: url("img/main/build/background.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.build__headline {
+  width: 734px;
+  font-weight: 800;
+  font-size: 80px;
+  line-height: 94px;
+  color: #114455;
+}
+.build__text {
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 40px;
+  /* identical to box height */
+  color: #1F1F1F;
+  opacity: 0.7;
+}
+.build__button {
+  max-width: 197px;
+}
+.build__container {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.button__teal {
+  background: #114455;
+  gap: 16px;
+  color: #fff;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 36px;
+  padding: 10px 24px 10px 12px;
+  border-radius: 2px;
+  display: flex;
+}
+
+.case {
+  padding-bottom: 328px;
+}
+.case__headline {
+  padding-bottom: 18px;
+}
+.case__text {
+  padding-bottom: 100px;
+  width: 1076px;
+}
+.case__items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 104px;
+}
+.case__item {
+  align-items: flex-end;
+  display: flex;
+}
+.case__item-text {
+  position: relative;
+  z-index: 2;
+  font-weight: 800;
+  font-size: 140px;
+  line-height: 164px;
+  color: #114455;
+  padding-left: 40px;
+}
+.case__item-text:after {
+  content: "";
+  color: #fff;
+}
+.case__item-image img {
+  margin-left: -408px;
+  position: relative;
+}
+
+.headline {
+  font-weight: 800;
+  font-size: 80px;
+  line-height: 94px;
+  color: #1F1F1F;
+}
+
+.text {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 44px;
+  color: #1F1F1F;
+  opacity: 0.7;
+}
+
+.video {
+  padding-bottom: 428px;
+}
+.video__container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.video__headline {
+  padding-bottom: 18px;
+}
+.video__text {
+  padding-bottom: 78px;
+}
+.video__video iframe {
+  width: 1720px;
+  height: 967px;
+}
+
+.footer {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 36px;
+  letter-spacing: 0.04em;
+  color: #1F1F1F;
+  opacity: 0.7;
+}
+.footer__container {
+  padding-bottom: 80px;
+  align-items: center;
+  display: flex;
+}
+.footer__text {
+  padding-right: 800px;
+}
+.footer__email {
+  padding-right: 110px;
+}
+.footer__socials {
+  align-items: center;
+  display: flex;
+  gap: 26px;
+}
+
+/*# sourceMappingURL=style.css.map */
